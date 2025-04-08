@@ -13,7 +13,7 @@ public:
             ops++;
             break;
         }
-        nums.erase(nums.begin(), nums.begin() + 2+1);
+        nums.erase(nums.begin(), nums.begin() + 3);
         ops++;
     }
     return ops;
