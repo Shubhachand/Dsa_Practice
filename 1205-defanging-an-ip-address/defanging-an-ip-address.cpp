@@ -11,11 +11,11 @@ public:
         //     }
         //     i++;
         // }
-        for(char ch : address){
-            if(ch =='.'){
-                ans+="[.]";
-            }else{
-                ans+=ch;
+        for (char ch : address) {
+            if (ch == '.') {
+                ans += "[.]";
+            } else {
+                ans += ch;
             }
         }
         return ans;
