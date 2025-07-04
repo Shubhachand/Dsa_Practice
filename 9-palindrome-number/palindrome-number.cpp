@@ -1,19 +1,18 @@
 class Solution {
 public:
-    bool isPalindrome(int x) {
-        if(x<0){
-            return false;
-        }
-        long sum=0;
-        long n=x;
+    bool isPalindrome(int num) {
+        int rev = 0;
+        int x = num;
+        if(x<0) return false;
+
         while(x!=0){
-            int rem=x%10;
-            sum=sum*10+rem;
-            x=x/10;
+            int digit = x%10;
+            if(rev>INT_MAX/10 || rev == INT_MAX/10 && digit >7 ) return false;
+        rev= (rev* 10) + digit;
+            
+        x/=10;
         }
-        if(n==sum){
-            return true;
-        }
-        return false;
+        if(num!=rev) return false;
+        else return true;
     }
 };
