@@ -1,6 +1,6 @@
 class Solution {
 public:
-    void sum(int i, int target, vector<int> arr, vector<int>& temp,
+    void sum(int i, int target, vector<int>& arr, vector<int>& temp,
              vector<vector<int>>& ans) {
         if (target == 0) {
             ans.push_back(temp);
