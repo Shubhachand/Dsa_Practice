@@ -7,11 +7,11 @@ public:
             mp[nums[i]]++;
      
         }
-        int maxi = 0;
+       
         int ans = 0;
           for (auto it = mp.begin(); it != mp.end(); it++) {
-            if (it->second > maxi) {
-                maxi = it->second;
+            if (it->second > nums.size()/2) {
+                
                 ans = it->first;
             }
         }
